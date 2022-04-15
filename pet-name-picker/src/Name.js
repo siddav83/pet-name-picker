@@ -2,12 +2,11 @@ import React from 'react';
 import NameData from './NameData.json'
 
 const Name = () => {
-    console.log(typeof NameData)
     const results = NameData
     return(
-        <div>
+        <div className="d-flex flex-wrap bd-highlight">
             {results.map((name) => (
-                <h4>{name.name}</h4>
+                <div className="p-2 bd-highlight col-example">{name.name}</div>
                 ))}
         </div>
     )

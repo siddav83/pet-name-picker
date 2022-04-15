@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Name from './Name.js';
+// import Name from './Name.js';
+import ListOfNames from "./ListOfNames";
 
 function App() {
   return (
-    <Name />
+    <ListOfNames />
   );
 }
 
