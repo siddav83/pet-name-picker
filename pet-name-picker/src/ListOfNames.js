@@ -5,6 +5,7 @@ const ListOfNames = () => {
     return(
         <div className="d-flex flex-wrap bd-highlight">
         <Name />
+        
             </div>
     )
 }

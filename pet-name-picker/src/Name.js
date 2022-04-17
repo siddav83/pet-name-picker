@@ -6,14 +6,16 @@ const Name = () => {
     console.log(results)
     return(
         <>
+        <div className="p-3 bd-highlight col-example">
         {/* <Button bsStyle="primary">Primary</Button> */}
             {results.map((name) => (
-                
-                <div className=" p-2 bd-highlight col-example"
+                <div 
                  key={name.id}
-                 sex = {name.sex === 'f' ? console.log("female"):console.log("male")}><button type="button" className="btn btn-primary">{name.name}</button></div>
-                
+                 className = {name.sex === 'f' ? ' p-auto m-1 bd-highlight col-example btn btn-info': ' p-auto m-1 bd-highlight col-example btn btn-primary' }>
+                 {name.name}
+                 </div>
                 ))}
+        </div>
         </>
     )
 }
