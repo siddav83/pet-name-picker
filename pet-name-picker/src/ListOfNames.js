@@ -3,7 +3,9 @@ import Name from './Name';
 
 const ListOfNames = () => {
     return(
-    < Name className="d-flex flex-nowrap bd-highlight"/>
+        <div className="d-flex flex-wrap bd-highlight">
+        <Name />
+            </div>
     )
 }
 
